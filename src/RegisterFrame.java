@@ -19,9 +19,9 @@ import javax.swing.WindowConstants;
 
 public class RegisterFrame extends JFrame implements MouseListener {
 
-    ImageIcon registerIcon = new ImageIcon("image\\login\\register.png");
+    ImageIcon registerIcon = new ImageIcon("image/login/register.png");
     JButton registerButton = new JButton(registerIcon);
-    ImageIcon backIcon = new ImageIcon("image\\login\\back.png");
+    ImageIcon backIcon = new ImageIcon("image/login/back.png");
     JButton backButton = new JButton(backIcon);
 
     JTextField usernameInput = new JTextField();
@@ -90,7 +90,7 @@ public class RegisterFrame extends JFrame implements MouseListener {
         ct.add(passwordReText);
 
         // 背景图片
-        ImageIcon bkgIcon = new ImageIcon("image\\login\\background.png");
+        ImageIcon bkgIcon = new ImageIcon("image/login/background.png");
         JLabel bkgLabel = new JLabel(bkgIcon);
         bkgLabel.setBounds(0, 0, bkgIcon.getIconWidth(), bkgIcon.getIconHeight());
         ct.add(bkgLabel);
@@ -172,7 +172,7 @@ public class RegisterFrame extends JFrame implements MouseListener {
     public void mousePressed(MouseEvent e) {
         Object source = e.getSource();
         if (source == registerButton) {
-            registerButton.setIcon(new ImageIcon("image\\login\\registerDown.png"));
+            registerButton.setIcon(new ImageIcon("image/login/registerDown.png"));
         }
     }
 
@@ -180,7 +180,7 @@ public class RegisterFrame extends JFrame implements MouseListener {
     public void mouseReleased(MouseEvent e) {
         Object source = e.getSource();
         if (source == registerButton) {
-            registerButton.setIcon(new ImageIcon("image\\login\\register.png"));
+            registerButton.setIcon(new ImageIcon("image/login/register.png"));
         }
     }
 

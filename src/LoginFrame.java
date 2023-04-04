@@ -17,10 +17,10 @@ import javax.swing.WindowConstants;
 
 public class LoginFrame extends JFrame implements MouseListener {
 
-    ImageIcon loginIcon = new ImageIcon("image\\login\\login.png");
+    ImageIcon loginIcon = new ImageIcon("image/login/login.png");
     JButton loginButton = new JButton(loginIcon);
 
-    ImageIcon registerIcon = new ImageIcon("image\\login\\register.png");
+    ImageIcon registerIcon = new ImageIcon("image/login/register.png");
     JButton registerButton = new JButton(registerIcon);
 
     JTextField usernameInput = new JTextField();
@@ -98,13 +98,13 @@ public class LoginFrame extends JFrame implements MouseListener {
         ct.add(checkCodeText);
 
         // 6.3 添加验证码图片
-        ImageIcon checkCodeIcon = new ImageIcon("image\\login\\login.png");
+        ImageIcon checkCodeIcon = new ImageIcon("image/login/login.png");
         JLabel checkCodeLabel = new JLabel(checkCodeIcon);
         checkCodeLabel.setBounds(260, 180, checkCodeIcon.getIconWidth(), checkCodeIcon.getIconHeight());
         ct.add(checkCodeLabel);
 
         // 背景图片
-        ImageIcon bkgIcon = new ImageIcon("image\\login\\background.png");
+        ImageIcon bkgIcon = new ImageIcon("image/login/background.png");
         JLabel bkgLabel = new JLabel(bkgIcon);
         bkgLabel.setBounds(0, 0, bkgIcon.getIconWidth(), bkgIcon.getIconHeight());
         ct.add(bkgLabel);
@@ -169,9 +169,9 @@ public class LoginFrame extends JFrame implements MouseListener {
     public void mousePressed(MouseEvent e) {
         Object obj = e.getSource();
         if (obj == loginButton) {
-            loginButton.setIcon(new ImageIcon("image\\login\\loginDown.png"));
+            loginButton.setIcon(new ImageIcon("image/login/loginDown.png"));
         } else if (obj == registerButton) {
-            registerButton.setIcon(new ImageIcon("image\\login\\registerDown.png"));
+            registerButton.setIcon(new ImageIcon("image/login/registerDown.png"));
         }
     }
 
@@ -179,9 +179,9 @@ public class LoginFrame extends JFrame implements MouseListener {
     public void mouseReleased(MouseEvent e) {
         Object obj = e.getSource();
         if (obj == loginButton) {
-            loginButton.setIcon(new ImageIcon("image\\login\\login.png"));
+            loginButton.setIcon(new ImageIcon("image/login/login.png"));
         } else if (obj == registerButton) {
-            registerButton.setIcon(new ImageIcon("image\\login\\register.png"));
+            registerButton.setIcon(new ImageIcon("image/login/register.png"));
         }
     }
 
