@@ -74,7 +74,8 @@ public class CurrentCard {
                 break;
                 case 8:
                 break;
-                case 9
+                case 9:
+                break;
             }
         }
         choicedCard(int[] choiCards) {
