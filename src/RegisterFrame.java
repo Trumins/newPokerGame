@@ -1,6 +1,8 @@
 import java.awt.Color;
 import java.awt.Container;
 import java.awt.Font;
+import java.awt.event.ComponentAdapter;
+import java.awt.event.ComponentEvent;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.io.BufferedWriter;
@@ -49,6 +51,7 @@ public class RegisterFrame extends JFrame implements MouseListener {
 
         // 2.2返回按钮
         backButton.setBounds(20, 20, backIcon.getIconWidth(), backIcon.getIconHeight());
+//        backButton.resize(50, 100);
         backButton.setBorderPainted(false);
         backButton.setContentAreaFilled(false);
         ct.add(backButton);
